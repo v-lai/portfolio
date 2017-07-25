@@ -1,0 +1,32 @@
+.space {
+  display: flex;
+  flex: 1;
+  justify-content: space-around;
+  margin: 0 200px;
+}
+.devicon {
+  font-size: 80px;
+  color: #00BFA5;
+}
+
+.contact-fa {
+  font-size: 90px;
+  color: #00BFA5;
+}
+
+.fa-angellist {
+  font-size: 80px;
+}
+
+.devicon:hover,
+.contact-fa:hover {
+  color: #004D40;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
