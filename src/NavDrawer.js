@@ -16,7 +16,7 @@ const NavDrawer = (props) => {
     <Router>
       <div>
         <Drawer className="drawer" open={props.open}>
-          <Link to="/"><MenuItem onTouchTap={props.close}>
+          <Link to="/portfolio"><MenuItem onTouchTap={props.close}>
             <i className="fa fa-hand-spock-o" aria-hidden="true"></i>&nbsp;
             v-lai.github.io</MenuItem></Link>
           <Link to="/projects"><MenuItem onTouchTap={props.close}>
@@ -29,7 +29,7 @@ const NavDrawer = (props) => {
             <i className="fa fa-address-card" aria-hidden="true"></i>&nbsp;
             Contact</MenuItem></Link>
         </Drawer>
-        <Route exact path="/" component={Home} />
+        <Route exact path="/portfolio" component={Home} />
         <Route path="/projects" component={Projects} />
         <Route path="/about" component={About} />
         <Route path="/contact" component={Contact} />
