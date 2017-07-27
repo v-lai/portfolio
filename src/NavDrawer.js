@@ -19,20 +19,20 @@ const NavDrawer = (props) => {
           <Link to="/portfolio"><MenuItem onTouchTap={props.close}>
             <i className="fa fa-hand-spock-o" aria-hidden="true"></i>&nbsp;
             v-lai.github.io</MenuItem></Link>
-          <Link to="/projects"><MenuItem onTouchTap={props.close}>
+          <Link to="/portfolio/projects"><MenuItem onTouchTap={props.close}>
             <i className="fa fa-id-card" aria-hidden="true"></i>&nbsp;
             Projects</MenuItem></Link>
-          <Link to="/about"><MenuItem onTouchTap={props.close}>
+          <Link to="/portfolio/about"><MenuItem onTouchTap={props.close}>
             <i className="fa fa-user-circle-o" aria-hidden="true"></i>&nbsp;
             About Me</MenuItem></Link>
-          <Link to="/contact"><MenuItem onTouchTap={props.close}>
+          <Link to="/portfolio/contact"><MenuItem onTouchTap={props.close}>
             <i className="fa fa-address-card" aria-hidden="true"></i>&nbsp;
             Contact</MenuItem></Link>
         </Drawer>
         <Route exact path="/portfolio" component={Home} />
-        <Route path="/projects" component={Projects} />
-        <Route path="/about" component={About} />
-        <Route path="/contact" component={Contact} />
+        <Route path="/portfolio/projects" component={Projects} />
+        <Route path="/portfolio/about" component={About} />
+        <Route path="/portfolio/contact" component={Contact} />
       </div>
     </Router>
   );
