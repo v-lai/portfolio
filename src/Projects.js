@@ -2,6 +2,8 @@ import React from 'react';
 import { Card, CardActions, CardMedia, CardTitle, CardText } from 'material-ui/Card';
 import FlatButton from 'material-ui/FlatButton';
 import './Projects.css';
+import gs from './static/garagescript-chat.png'
+import pet from './static/petadopter.png'
 import tradecraft from './static/tradecraft-patterns.png'
 import coursereport from './static/coursereport-cities.png'
 import calendar from './static/calendar-mood.png'
@@ -13,6 +15,51 @@ const Projects = () => (
     <h2>Projects</h2>
     <h3>Team/Company Projects</h3>
     <p></p>
+    <div className="card">
+      <Card>
+        <CardTitle title="GarageScript Chat" subtitle="Chat for Learners of JavaScript" />
+        <CardMedia>
+          <img className="card-img" src={gs} alt="garagescript chat screenshot" />
+        </CardMedia>
+        <CardText>
+          <p>GarageScript is a nonprofit that is dedicated to training people who are pursuing a career as software engineers. GarageScript chat is a real-time tool that allows JavaScript learners to get help and communicate with others.</p>
+          <p>I helped lead a team to build the initial front end and back end, using React and Redux on the front end as well as Node.js, Express, and MySql on the backend. Socket.io was added for real-time communication.</p>
+          <p></p>
+          <span className="project-icon">
+            <i className="devicon-javascript-plain" alt="javascript"></i>&nbsp;
+            <i className="devicon-nodejs-plain" alt="node"></i>&nbsp;
+            <i className="devicon-react-original" alt="react"></i>&nbsp;
+            <i className="devicon-express-original" alt="express"></i>&nbsp;
+            <i className="devicon-mysql-plain-wordmark" alt="mysql"></i>&nbsp;
+          </span>
+        </CardText>
+        <CardActions>
+          <FlatButton className="btn" label="GarageScript (launch coming soon)" href="https://garagescript.org" />
+        </CardActions>
+      </Card>
+    </div>
+
+    <div className="card">
+      <Card>
+        <CardTitle title="Pet Adopter" subtitle="Connecting people to make pet adoption easier" />
+        <CardMedia>
+          <img className="card-img" src={pet} alt="pet adopter screenshot" />
+        </CardMedia>
+        <CardText>
+          <p>In progress: Web version of the Android/iOS Pet Adopter App.</p>
+          <p>Built using React, Redux, and Firebase for the backend.</p>
+          <p></p>
+          <span className="project-icon">
+            <i className="devicon-javascript-plain" alt="javascript"></i>&nbsp;
+            <i className="devicon-react-original" alt="react"></i>&nbsp;
+          </span>
+        </CardText>
+        <CardActions>
+          <FlatButton className="btn" label="Pet Adopter" href="#" disabled />
+        </CardActions>
+      </Card>
+    </div>
+
     <div className="card">
       <Card>
         <CardTitle title="Tradecraft Patterns" subtitle="Job Seeker App" />
@@ -31,7 +78,6 @@ const Projects = () => (
           </span>
         </CardText>
         <CardActions>
-          <FlatButton className="btn" label="View" href="https://patterns-staging.herokuapp.com" />
           <FlatButton className="btn" label="AngelList Page" href="https://angel.co/projects/573245-tradecraft-patterns" />
         </CardActions>
       </Card>
