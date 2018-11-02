@@ -34,7 +34,7 @@ const Projects = () => (
           </span>
         </CardText>
         <CardActions>
-          <FlatButton className="btn" label="GarageScript (launch coming soon)" href="https://garagescript.org" />
+          <FlatButton className="btn" label="GarageScript" href="https://garagescript.org" />
         </CardActions>
       </Card>
     </div>

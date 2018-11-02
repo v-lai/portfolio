@@ -3,15 +3,22 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "deep-extend": "^0.5.1",
+    "forwarded": "^0.1.2",
+    "fresh": "^0.5.2",
     "gh-pages": "^1.2.0",
     "hoek": "^4.2.1",
     "material-ui": "^0.18.7",
-    "mime": "^1.4.1",
+    "merge": "^1.2.1",
+    "mime": "^1.6.0",
+    "no-case": "^2.3.2",
+    "randomatic": "^3.1.1",
     "react": "^15.6.2",
     "react-dom": "^15.6.2",
     "react-router": "^4.3.1",
     "react-router-dom": "^4.3.1",
-    "react-tap-event-plugin": "^2.0.1"
+    "react-tap-event-plugin": "^2.0.1",
+    "tough-cookie": "^2.4.3"
   },
   "devDependencies": {
     "react-scripts": "1.0.10"
